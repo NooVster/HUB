@@ -701,9 +701,9 @@ function CreateNewButton(ButtonConfig, Parent)
 	return Button, ButtonLabel
 end
 
-function Hub.Load(Config)
+function NooVHub.Load(Config)
 	local Style = (Config.Style and math.clamp(Config.Style, 1, 3)) or 1
-	local Title = Config.Title or "HubLua"
+	local Title = Config.Title or "NooVHubLua"
 	local SizeX = Config.SizeX or 300
 	local SizeY = Config.SizeY or 500
 	local Theme = Config.Theme or "Light"
@@ -2432,4 +2432,4 @@ function Hub.Load(Config)
 	return TabLibrary
 end
 
-return Hub
+return NooVHub
